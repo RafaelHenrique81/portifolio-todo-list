@@ -12,10 +12,6 @@ form.addEventListener('submit',(event) => {
             <span>${event.target.add.value.trim()}</span>
             <i class="far fa-trash-alt delete"></i>
         </li>`
-        
-        // event.target.add.value.trim()
-        // console.log(event.target.add.value.trim())
-
     }
     event.target.reset()
 })
@@ -23,3 +19,12 @@ form.addEventListener('submit',(event) => {
 search.addEventListener('submit',(event) => {
     event.preventDefault()
 })
+
+container.addEventListener('click', event => {
+    const clickedElement = event.target
+
+    if(Array.from(clickedElement.classList).includes('delete')){
+        clickedElement.parentElement.remove()
+    }
+})
+
