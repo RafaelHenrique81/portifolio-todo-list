@@ -17,3 +17,7 @@ input[type=text]:focus {
 .delete {
   cursor: pointer;
 }
+
+.delete:hover {
+  color: rgba(236, 14, 14);
+}
