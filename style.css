@@ -14,10 +14,14 @@ input[type=text]:focus {
   background: #484E53;
 }
 
-.delete {
+i[data-trash] {
   cursor: pointer;
 }
 
-.delete:hover {
+i[data-trash]:hover {
   color: rgba(236, 14, 14);
+}
+
+.hidden {
+  display: none;
 }
